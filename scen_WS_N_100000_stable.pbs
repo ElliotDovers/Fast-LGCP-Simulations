@@ -1,0 +1,30 @@
+#!/bin/bash
+	
+#PBS -N WS_N_100000_stable
+#PBS -l select=1:ncpus=1:mem=60gb
+#PBS -l walltime=48:00:00
+#PBS -J 1-1000
+
+cd $HOME/Sim_Study_JCGS
+
+module purge
+module add gcc/7.5.0
+module add geos/3.10.2
+module add netcdf-c/4.6.1
+module add proj/8.2.1
+module add perl/5.28.0
+module add gsl/2.6
+module add hdf5/1.10.3
+module add sqlite/3.31.1
+module add python/3.8.3-gcc7
+module add udunits/2.2.26
+module add hdf4/4.2.14
+module add spatialite/5.0.1
+module add gdal/3.4.1
+module add cfitsio/4.0.0
+module add R/4.2.0-gcc7-clean
+
+Rscript scenario_WS_N_100000_stable.R 2> /dev/null
+
+
+
