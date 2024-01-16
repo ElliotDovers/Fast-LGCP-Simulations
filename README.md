@@ -1,16 +1,6 @@
-# Fast-IDM-Code
-This repo accompanies the manuscript "Fast methods for fitting species distribution models
-from integrated data" published in Methods in Ecology and Evolution:\
-[https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14252](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14252)\
-The code can be used to replicate both the simulations and real data analyses therein.
+# Fast-LGCP-Simulations
+This repo accompanies the manuscript "Fast, Approximate Maximum Likelihood Estimation of Log-Gaussian Cox Processes" published in the Journal of Computational and Graphical Statistics:
+[https://www.tandfonline.com/doi/full/10.1080/10618600.2023.2182311](https://www.tandfonline.com/doi/full/10.1080/10618600.2023.2182311)\
+This code was used to produce the simulations in Section 4 (and Supplementary Material S2).
 
-## SIMULATION STUDY
-Contains the three simulation studies explored in the paper:
-- Comparing scampr and INLA
-- Effects of data availability and spatial range on the IDM
-- Appendix: Replicating the baseline simulations of Simmonds et al., 2020
-
-## APPLICATION TO DATA
-Contains `R` scripts to analyse 29 species of Flora from the `disdat` package - see Elith et al., 2020
-
-see additional README files within subfolders for further details
+Code for analysing the gorilla nesting data within the paper is provided as part of the Supplementary Materials.
